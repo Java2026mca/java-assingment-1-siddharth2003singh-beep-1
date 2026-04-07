@@ -8,7 +8,7 @@ public class Main {
         int total = 2 * n - 1;
 
         for (int i = 0; i < total; i++) {
-            int row = i < n ? i : total - i - 1;
+            int row = (i < n) ? i : total - i - 1;
 
             for (int j = 0; j < total; j++) {
                 if (j == n - row - 1 || j == n + row - 1)
