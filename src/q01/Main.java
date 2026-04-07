@@ -5,21 +5,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        // TODO: Print a hollow diamond pattern of half-height n using '*'
-        //
-        // Rules:
-        //   - Only border cells have '*', inside is spaces
-        //   - No trailing spaces on any line
-        //
-        // Input: 4
-        // Output:
-        //    *
-        //   * *
-        //  *   *
-        // *     *
-        //  *   *
-        //   * *
-        //    *
+        int total = 2 * n - 1;
 
+        for (int i = 0; i < total; i++) {
+            int row = i < n ? i : total - i - 1;
+
+            for (int j = 0; j < total; j++) {
+                if (j == n - row - 1 || j == n + row - 1)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 }
