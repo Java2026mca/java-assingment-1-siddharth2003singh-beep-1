@@ -3,8 +3,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String shape = sc.next();
 
+        String shape = sc.next();
         double area = 0;
 
         if (shape.equals("circle")) {
@@ -27,4 +27,3 @@ public class Main {
         System.out.printf("Area: %.2f", area);
     }
 }
-
