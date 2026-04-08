@@ -9,7 +9,7 @@ public class Main {
 
         if (shape.equals("circle")) {
             double r = sc.nextDouble();
-            area = 3.14 * r * r;
+            area = 3.1416 * r * r;   // ✅ use this for correct rounding
         } 
         else if (shape.equals("rectangle")) {
             double l = sc.nextDouble();
